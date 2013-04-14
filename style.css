@@ -1,0 +1,116 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}*,*:after,*:before {box-sizing: border-box; -moz-box-sizing: border-box}
+/* End reset */
+@font-face {
+	font-family:'Corbert Regular';
+	src: url('fonts/Corbert_Regular_Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Ostrich-Rounded';
+  src: url('fonts/ostrich-rounded-webfont/ostrich-rounded-webfont.eot'); /* IE 5-8 */ 
+  src: local('☺'),             /* sneakily trick IE */
+        url('fonts/ostrich-rounded-webfont/ostrich-rounded-webfont.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+        url('fonts/ostrich-rounded-webfont/ostrich-rounded-webfont.ttf') format('truetype'), /* Opera, Safari */
+        url('fonts/ostrich-rounded-webfont/ostrich-rounded-webfont.svg#font') format('svg'); /* iOS */
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'Corbert Regular', helvetica, verdana, arial, sans-serif;
+	color: rgba(255,255,255,1);
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.2);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21,21,21,1);
+	background-image: url(images/noisy-texture-200x200-o2-d10-c-151515-t0.png);
+	overflow: hidden;
+}
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em!important;letter-spacing:inherit!important;word-spacing:inherit!important;*letter-spacing:0!important;*word-spacing:0!important}.slabtextdone .slabtext{display:block}
+
+.bg-orange {
+	background-color: rgba(255,165,0,1);	
+}
+#weather-container {
+	width: 300px;
+	float: right;
+	display: block;
+}
+.weather-today, .weather-tomorrow, .weather-dayafter {
+	position: relative;
+}
+.weather-today {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	width: 300px;
+	margin-bottom: 5px;
+	float: left;
+	display: block;
+	clear: both;
+}
+.weather-tomorrow {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-right: none;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-left: 1px solid rgba(255,255,255,0.2);
+	width: 150px;
+	float: left;
+	display: block;
+	max-height: 60px;
+}
+.weather-dayafter {
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-left: none;
+	width: 150px;
+	float: left;
+	display: block;
+	max-height: 55px;
+}
+.weather-icon {
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+.weather-today .weather-details {
+	float: left;
+	display: block;
+	width: 150px;
+}
+.weather-tomorrow .weather-details, .weather-dayafter .weather-details {
+	display: block;
+	width: 100px;
+	margin-left: 51px;
+}
+.skycon {
+}
+.weather-today .desc {
+	clear: both;
+	width: 150px;
+}
+.weather-tomorrow .desc, .weather-dayafter .desc {
+	width: 90px;
+	font-size: 1rem;
+	float: left;
+	text-align: center;
+}
+.temp-min {
+	float: left;
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin-right: 10px; 
+	color: rgba(135,206,250,1);
+}
+.temp-max {
+	float: left;
+	font-weight: bold;
+	font-size: 1.8rem;
+	color: rgba(255,69,0,1);
+}
