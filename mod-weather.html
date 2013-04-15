@@ -1,3 +1,4 @@
+<!-- design 1 branch -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,39 +12,33 @@
 <body>
 	<div id="weather-container">
 		<div class="weather-today bg-orange">
+			<div class="weather-icon">
+				<canvas class="skycon" id="today-skycon" width="100" height="100"></canvas>
+			</div>
 			<div class="weather-details">
-				<div class="weather-icon">
-					<canvas class="skycon" id="today-skycon" width="100" height="100"></canvas>
-				</div>
-				<div class="weather-forecast">
-					<div class="desc">XXXXXXXX</div>
-					<div class="temp">XX</div>
-					<div class="time-now">As of XX:XX XX</div>
-				</div>
+				<div class="desc">FORECAST</div>
+				<div class="temp">XX</div>
+				<div class="time-now">As of X:XXXX</div>
 			</div>
 		</div>
 		<div class="weather-tomorrow bg-orange">
+			<div class="weather-icon">
+				<canvas class="skycon" id="tomorrow-skycon" width="50" height="50"></canvas>
+			</div>
 			<div class="weather-details">
-				<div class="weather-icon">
-					<canvas class="skycon" id="tomorrow-skycon" width="50" height="50"></canvas>
-				</div>
-				<div class="weather-forecast">
-					<div class="temp-min text-blue">XX</div>
-					<div class="temp-max text-red">XX</div>
-					<div class="desc">XXXXXXXX</div>
-				</div>
+				<div class="temp-min">XX</div>
+				<div class="temp-max">XX</div>
+				<div class="desc">FORECAST</div>
 			</div>
 		</div>
 		<div class="weather-dayafter bg-orange">
+			<div class="weather-icon">
+				<canvas class="skycon" id="dayafter-skycon" width="50" height="50"></canvas>
+			</div>
 			<div class="weather-details">
-				<div class="weather-icon">
-					<canvas class="skycon" id="dayafter-skycon" width="50" height="50"></canvas>
-				</div>
-				<div class="weather-forecast">
-					<div class="temp-min text-blue">XX</div>
-					<div class="temp-max text-red">XX</div>
-					<div class="desc">XXXXXXXX</div>
-				</div>
+				<div class="temp-min">XX</div>
+				<div class="temp-max">XX</div>
+				<div class="desc">FORECAST</div>
 			</div>
 		</div>
 	</div>
